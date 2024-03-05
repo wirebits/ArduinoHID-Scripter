@@ -104,6 +104,10 @@ The testing is going on different systems.
 11. Upload the code.<br>
 -Be Careful! As it is uploaded the script start executing.<br>
 
+# Release
+v1.0.0
+Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.0.0/ArduinoHIDScripter.exe">here</a>.
+
 # Start/Stop the Arduino Board
 Arduino Leonardo and Arduino Mico has a reset button on it.<br>
 Just press and hold the button to stop execution and release to start execution.<br>
