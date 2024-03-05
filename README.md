@@ -43,7 +43,7 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
  </tr>
  <tr>
   <th>WAIT</th>
-  <th>It add time in the code.<br>Time is in milliseconds.<br>1000 = 1 second.</th>
+  <th>It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second.</th>
   <th>WAIT 1000</th>
  </tr>
 </table>
