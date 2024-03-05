@@ -105,7 +105,7 @@ The testing is going on different systems.
 -Be Careful! As it is uploaded the script start executing.<br>
 
 # Release
-v1.0.0
+<b>v1.0.0</b> - 
 Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.0.0/ArduinoHIDScripter.exe">here</a>.
 
 # Start/Stop the Arduino Board
