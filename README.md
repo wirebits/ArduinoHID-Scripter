@@ -22,6 +22,7 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
 # Setup and Installation of Arduino IDE
 1. Download Arduino IDE from <a href="https://www.arduino.cc/en/software">here</a> according to your Operating System.<br>
 2. Install it.<br>
+3. Done! All required libraries are pre-installed in Arduino IDE.<br>
 
 # Mnemonic Table
 <table>
@@ -102,6 +103,16 @@ The testing is going on different systems.
 10. Select the port number of that board.<br>
 11. Upload the code.<br>
 -Be Careful! As it is uploaded the script start executing.<br>
+
+# Start/Stop the Arduino Board
+Arduino Leonardo and Arduino Mico has a reset button on it.<br>
+Just press and hold the button to stop execution and release to start execution.<br>
+For Arduino Pro Micro : <br>
+1. If want to stop Arduino Pro Micro from execution, then connect the Male-To-Male jumper wires as shown in image below : <br>
+
+![Untitled Sketch 2_bb](https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/d2b2e09b-971f-416f-ab47-31584f757970)
+
+2. If want to start again the execution, simply remove the jumper wires.
 
 <h1>Key Features</h1>
 <b>1. Simple and clean GUI.</b><br>
