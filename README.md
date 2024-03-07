@@ -33,7 +33,7 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
  </tr>
  <tr>
   <th>TYPE</th>
-  <th>It add text want to type in the code.</th>
+  <th>It add text want to type in the code and put the cursor on the same line.</th>
   <th>TYPE Hello World!</th>
  </tr>
  <tr>
@@ -45,6 +45,16 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
   <th>WAIT</th>
   <th>It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second.</th>
   <th>WAIT 1000</th>
+ </tr>
+  <tr>
+  <th>REDO</th>
+  <th>It add loop in the code.<br>It takes two arguments.<br>One is number of times to run loop.<br>Second is mnemonic in the loop body.</th>
+  <th>REDO 6 TYPE Hello World!</th>
+ </tr>
+  <tr>
+  <th>TYNL</th>
+  <th>It add text want to type in the code and put the cursor on the next line.</th>
+  <th>TYNL ArduinoHID Scripter</th>
  </tr>
 </table>
 
