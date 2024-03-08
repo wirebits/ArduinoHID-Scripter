@@ -58,8 +58,8 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
  </tr>
 </table>
 
-# Example
-1. Mnemonic for Open Notepad and Type
+# Examples
+## Example - 1 : Mnemonic for Open Notepad and Type
 
 ```
 WAIT 1000
@@ -96,7 +96,7 @@ void loop()
 ```
 Just copy this code and paste it in the Arduino IDE.<br>
 
-2. Mnemonic for Open Notepad and Type 6 times
+## Example - 2 : Mnemonic for Open Notepad and Type 6 times
 ```
 WAIT 1000
 PRESS GUI R
