@@ -58,6 +58,26 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
  </tr>
 </table>
 
+# Supported Mnemonics
+These mnemonics works with PRESS.
+## Alphabet Keys
+```A``` ```B``` ```C``` ```D``` ```E``` ```F``` ```G``` ```H``` ```I``` ```J```
+```K``` ```L``` ```M``` ```N``` ```O``` ```P``` ```Q``` ```R``` ```S``` ```T```
+```U``` ```V``` ```W``` ```X``` ```Y``` ```Z```
+## Function Keys
+```F1``` ```F2``` ```F3``` ```F4``` ```F5``` ```F6``` ```F7``` ```F8``` ```F9``` ```F10```
+```F11``` ```F12```
+## Navigation Keys
+```LEFT``` ```UP``` ```RIGHT``` ```DOWN``` ```TAB``` ```HOME``` ```END``` ```PGUP``` ```PGDN```
+## Lock Keys
+```CAPS``` ```NUM``` ```SCROLL```
+## System and GUI Keys
+```GUI``` ```ESC``` ```PRTSCR``` ```PAUSE```
+## Editing Keys
+```INSERT``` ```DEL``` ```SPACE``` ```BKSP``` ```ENTER```
+## Modifier Keys
+```CTRL``` ```SHIFT``` ```ALT```
+
 # Examples
 ## Example - 1 : Mnemonic for Open Notepad and Type
 
