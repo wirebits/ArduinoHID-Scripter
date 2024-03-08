@@ -125,7 +125,7 @@ void setup()
  Keyboard.press(KEY_RETURN);
  Keyboard.releaseAll();
  delay(1000);
- for (int i=0; i<=6; i++)
+ for (int i=1; i<=6; i++)
  {
   Keyboard.println("This is a test for arduino script developed by ArduinoHID Scripter!");
  }
