@@ -48,9 +48,8 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
  </tr>
   <tr>
   <th>REDO</th>
-  <th>It add loop in the code.<br>It takes two arguments.<br>One is number of times to run loop.<br>Second is mnemonic in the loop body.</th>
+  <th>It add loop in the code.<br>It takes two arguments.<br>One is number of times to run loop.<br>Second is mnemonic in the loop body.<br>REDO works with TYPE, TYNL and WAIT mnemonics only.</th>
   <th>REDO 6 TYPE Hello World!</th>
-  <th>REDO works with TYPE, TYNL and WAIT mnemonics only.</th>
  </tr>
   <tr>
   <th>TYNL</th>
