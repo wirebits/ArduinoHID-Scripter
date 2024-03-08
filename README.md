@@ -59,7 +59,7 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
 </table>
 
 # Example
-Mnemonic for Open Notepad and Type
+1. Mnemonic for Open Notepad and Type
 
 ```
 WAIT 1000
@@ -95,12 +95,50 @@ void loop()
 }
 ```
 Just copy this code and paste it in the Arduino IDE.<br>
+
+2. Mnemonic for Open Notepad and Type 6 times
+```
+WAIT 1000
+PRESS GUI R
+WAIT 1000
+TYPE notepad
+WAIT 1000
+PRESS ENTER
+REDO 6 TYNL This is a test for arduino script developed by ArduinoHID Scripter!
+```
+after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
+```
+#include<Keyboard.h>
+void setup()
+{
+ Keyboard.begin();
+ delay(1000);
+ Keyboard.press(KEY_LEFT_GUI);
+ Keyboard.press('r');
+ Keyboard.releaseAll();
+ delay(1000);
+ Keyboard.print("notepad");
+ delay(1000);
+ Keyboard.press(KEY_RETURN);
+ Keyboard.releaseAll();
+ for (int i=0; i<=6; i++)
+ {
+  Keyboard.println("This is a test for arduino script developed by ArduinoHID Scripter!");
+ }
+ Keyboard.end();
+}
+void loop()
+{
+ //Nothing to do here ;)
+}
+```
+Just copy this code and paste it in the Arduino IDE.<br>
 # Tested Systems
 The tool is currently tested on : <br>
 1. Windows (10)<br>
 The testing is going on different systems.
 
-# Before codeing...
+# Before coding...
 Start your code with ```WAIT``` so that board get time to initiate.<br>
 
 # Install and Run
