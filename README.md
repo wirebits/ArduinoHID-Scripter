@@ -50,6 +50,7 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
   <th>REDO</th>
   <th>It add loop in the code.<br>It takes two arguments.<br>One is number of times to run loop.<br>Second is mnemonic in the loop body.</th>
   <th>REDO 6 TYPE Hello World!</th>
+  <th>REDO works with TYPE, TYNL and WAIT mnemonics only.</th>
  </tr>
   <tr>
   <th>TYNL</th>
@@ -99,6 +100,9 @@ Just copy this code and paste it in the Arduino IDE.<br>
 The tool is currently tested on : <br>
 1. Windows (10)<br>
 The testing is going on different systems.
+
+# Before codeing...
+Start your code with ```WAIT``` so that board get time to initiate.<br>
 
 # Install and Run
 1. Download or Clone the Repository.<br>
