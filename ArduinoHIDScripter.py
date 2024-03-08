@@ -116,7 +116,8 @@ class ArduinoHIDMain:
                         num_iterations = int(parts[1])
                     except ValueError:
                         continue
-                    mnemonics += f" for (int i=1; i<={num_iterations}; i++)\n {{\n"
+                    mnemonics += f" for (int i=1; i<={num_iterations}; i++)\n"
+                    mnemonics += " {\n"
                     converted_line = ArduinoHIDConverter.convert_to_arduino_script(" ".join(parts[2:]))
                     mnemonics += f" {converted_line}\n"
                     mnemonics += " }\n"
