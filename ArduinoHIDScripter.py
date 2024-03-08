@@ -1,3 +1,7 @@
+# ArduinoHID Scripter
+# A GUI tool which generates the arduino hid code by typing mnemonics.
+# Author - WireBits
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
