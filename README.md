@@ -163,7 +163,9 @@ Start your code with ```WAIT``` so that board get time to initiate.<br>
 **v1.0.0** - 
 Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.0.0/ArduinoHIDScripter.exe">here</a>.<br>
 **v1.1.0** -
-Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.1.0/ArduinoHIDScripter.exe">here</a>.
+Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.1.0/ArduinoHIDScripter.exe">here</a>.<br>
+**v1.2.0** - 
+Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.2.0/ArduinoHIDScripter.exe">here</a>.
 
 # Start/Stop the Arduino Board
 Arduino Leonardo and Arduino Mico has a reset button on it.<br>
