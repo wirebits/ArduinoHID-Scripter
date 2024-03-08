@@ -122,7 +122,7 @@ class ArduinoHIDMain:
                             return
                     except ValueError:
                         continue
-                    mnemonics += f" for (int i=0; i<={num_iterations}; i++)\n"
+                    mnemonics += f" for (int i=1; i<={num_iterations}; i++)\n"
                     mnemonics += " {\n"
                     for mnemonic in " ".join(parts[2:]).split(","):
                         converted_line = ArduinoHIDConverter.convert_to_arduino_script(mnemonic.strip())
