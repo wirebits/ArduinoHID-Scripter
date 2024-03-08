@@ -68,6 +68,7 @@ WAIT 1000
 TYPE notepad
 WAIT 1000
 PRESS ENTER
+WAIT 1000
 TYPE This is a test for arduino script developed by ArduinoHID Scripter!
 ```
 after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
@@ -86,6 +87,7 @@ void setup()
  delay(1000);
  Keyboard.press(KEY_RETURN);
  Keyboard.releaseAll();
+ delay(1000);
  Keyboard.print("This is a test for arduino script developed by ArduinoHID Scripter!");
  Keyboard.end();
 }
@@ -104,6 +106,7 @@ WAIT 1000
 TYPE notepad
 WAIT 1000
 PRESS ENTER
+WAIT 1000
 REDO 6 TYNL This is a test for arduino script developed by ArduinoHID Scripter!
 ```
 after click on ```Convert``` button, the arduino script of the following mnemonic is :<br>
@@ -121,6 +124,7 @@ void setup()
  delay(1000);
  Keyboard.press(KEY_RETURN);
  Keyboard.releaseAll();
+ delay(1000);
  for (int i=0; i<=6; i++)
  {
   Keyboard.println("This is a test for arduino script developed by ArduinoHID Scripter!");
