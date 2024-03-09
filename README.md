@@ -79,6 +79,7 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
 - Example - TYNL Hello World!<br>
 ## 3. WAIT
 - It add time in the code.<br>
+- It gives time to execute between two commands.<br>
 - Time is in milliseconds.<br>
 - 1000 ms = 1 second.<br>
 - Example - WAIT 1000<br>
