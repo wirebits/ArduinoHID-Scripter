@@ -10,6 +10,13 @@ A GUI tool that generates Arduino HID scripts from mnemonics.
 - Save Button - Save arduino scripts on the system for future use.<br>
 - Exit Button - Close the application.<br>
 
+# New Features Added!
+- `for` Loop added.<br>
+- Next line function added.<br>
+- TYPE and TYNL supports " ".<br>
+- Multiple statements are supported inside for loop.<br>
+- Restrict PRESS mnemonic inside for loop.<br>
+
 # Supported Arduino Boards
 The following boards are working on a microcontroller named ```ATMEGA32U4```.<br>
 - ```32``` means it has 32 Kb memory, ```U``` means it has built-in USB Communication and ```4``` means 4 Kb of memory consumed by bootleader.<br>
