@@ -120,7 +120,7 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
 ## System and GUI Keys
 ```GUI``` ```ESC``` ```PRTSCR``` ```PAUSE```
 ## Editing Keys
-```INSERT``` ```DEL``` ```SPACE``` ```BKSP``` ```ENTER```
+```INSERT``` ```DEL``` ```BKSP``` ```ENTER```
 ## Modifier Keys
 ```CTRL``` ```SHIFT``` ```ALT```
 
@@ -223,14 +223,6 @@ Start your code with ```WAIT``` so that board get time to initiate.<br>
 10. Select the port number of that board.<br>
 11. Upload the code.<br>
 -Be Careful! As it is uploaded the script start executing.<br>
-
-# Release
-**v1.0.0** - 
-Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.0.0/ArduinoHIDScripter.exe">here</a>.<br>
-**v1.1.0** -
-Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.1.0/ArduinoHIDScripter.exe">here</a>.<br>
-**v1.2.0** - 
-Download from <a href="https://github.com/wirebits/ArduinoHID-Scripter/releases/download/v1.2.0/ArduinoHIDScripter.exe">here</a>.
 
 # Start/Stop the Arduino Board
 Arduino Leonardo and Arduino Mico has a reset button on it.<br>
