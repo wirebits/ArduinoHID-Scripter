@@ -1,16 +1,25 @@
 # ArduinoHID-Scripter
 A GUI tool that generates Arduino HID scripts from mnemonics.
 
+# Key Features
+- Simple and clean GUI.<br>
+- Two large windows one for mnemonics and other for arduino code.<br>
+- Convert Button - Convert mnemonics to arduino script.<br>
+- Copy Button - Copy arduino script to the clipboard so that it can paste anywhere.<br>
+- Reset Button - Clear all data from both windows.<br>
+- Save Button - Save arduino scripts on the system for future use.<br>
+- Exit Button - Close the application.<br>
+
 # Supported Arduino Boards
 The following boards are working on a microcontroller named ```ATMEGA32U4```.<br>
-```32``` means it has 32 Kb memory, ```U``` means it has built-in USB Communication and ```4``` means 4 Kb of memory consumed by bootleader.<br>
-It has a built-in USB Communication so that it can act as ```Keyboard```, ```Mouse```, ```Game Controller``` etc.<br>
-List of supported boards : <br>
-<ul>
+- ```32``` means it has 32 Kb memory, ```U``` means it has built-in USB Communication and ```4``` means 4 Kb of memory consumed by bootleader.<br>
+- It has a built-in USB Communication so that it can act as ```Keyboard```, ```Mouse```, ```Game Controller``` etc.<br>
+- List of supported boards : <br>
+<ol>
   <li>Arduino Leonardo</li>
   <li>Arduion Micro</li>
   <li>Arduino Pro Micro</li>
-</ul>
+</ol>
 
 # Credits
 The mnemoics used in this tool is heavily inspired by <a href="https://github.com/hak5">Hak5</a> Ducky Script.<br>
@@ -19,10 +28,11 @@ The mnemoics used in this tool is heavily inspired by <a href="https://github.co
 
 https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4053-98e1-03ee21dff9fd
 
-# Setup and Installation of Arduino IDE
-1. Download Arduino IDE from <a href="https://www.arduino.cc/en/software">here</a> according to your Operating System.<br>
-2. Install it.<br>
-3. Done! All required libraries are pre-installed in Arduino IDE.<br>
+# Setup
+1. Make sure the latest python and pip3 is installed on your system (Windows/Linux/MacOS).<br>
+2. Download Arduino IDE from <a href="https://www.arduino.cc/en/software">here</a> according to your Operating System.<br>
+3. Install it.<br>
+4. Done! All required libraries are pre-installed in Arduino IDE.<br>
 
 # Mnemonic Table
 <table>
@@ -36,30 +46,65 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
   <th>It add text want to type in the code and put the cursor on the same line.</th>
   <th>TYPE Hello World!</th>
  </tr>
- <tr>
-  <th>PRESS</th>
-  <th>It press and hold the key(s) and then release all key(s).</th>
-  <th>PRESS GUI R</th>
- </tr>
- <tr>
-  <th>WAIT</th>
-  <th>It add time in the code.<br>Time is in milliseconds.<br>1000 ms = 1 second.</th>
-  <th>WAIT 1000</th>
- </tr>
-  <tr>
-  <th>REDO</th>
-  <th>It add loop in the code.<br>It takes two arguments.<br>One is number of times to run loop.<br>Second is mnemonic in the loop body.<br>REDO works with TYPE, TYNL and WAIT mnemonics only.</th>
-  <th>REDO 6 TYPE Hello World!</th>
- </tr>
   <tr>
   <th>TYNL</th>
   <th>It add text want to type in the code and put the cursor on the next line.</th>
   <th>TYNL ArduinoHID Scripter</th>
  </tr>
+  <tr>
+  <th>WAIT</th>
+  <th>It add time in the code.</th>
+  <th>WAIT 1000</th>
+ </tr>
+ <tr>
+  <th>PRESS</th>
+  <th>It press and hold the key(s) and then release all key(s).</th>
+  <th>PRESS GUI R</th>
+ </tr>
+  <tr>
+  <th>REDO</th>
+  <th>It add loop in the code.</th>
+  <th>REDO 6 TYPE Hello World!</th>
+ </tr>
 </table>
 
+# Details of Mnemonics
+## 1. TYPE
+- It add text want to type in the code and put the cursor on the same line.<br>
+- *NEW* - It supports " " in the TYPE.<br>
+- Example - TYPE Hello World!<br>
+## 2. TYNL
+- It add text want to type in the code and put the cursor on the next line.<br>
+- *NEW* - It supports " " in the TYNL.<br>
+- Example - TYNL Hello World!<br>
+## 3. WAIT
+- It add time in the code.<br>
+- Time is in milliseconds.<br>
+- 1000 ms = 1 second.<br>
+- Example - WAIT 1000<br>
+## 4. PRESS
+- It press and hold the key(s) and then release all key(s).<br>
+- The supported mnemonics given below works with PRESS.<br>
+- Example -
+<ol>
+  <li>PRESS GUI R</li>
+  <li>PRESS CTRL SHIFT N</li>
+  <li>PRESS CTRL SHIFT ENTER</li>
+</ol>
+
+## 5. REDO
+- It add loop in the code.<br>
+- The loop used in this is ```for``` loop.<br>
+- It takes two values : Number of repeatation and Statement inside the loop.<br>
+- Example - REDO 6 TYPE Hello World!<br>
+- Here, 6 is number of repetations and TYPE Hello World! is the statement.<br>
+- *NEW* - It supports multi statements.<br>
+- Multi statement are separated by comma ```,```.<br>
+- Example - REDO 9 TYPE Hello World!, WAIT 1000, TYPE This is a test for script!<br>
+- Here, `TYPE Hello World!`, `WAIT 1000` and `TYPE This is a test for script!` are three statements and they are separated by commas.<br>
+- REDO only supports TYPE, TYNL and WAIT Only.<br>
+
 # Supported Mnemonics
-These mnemonics works with PRESS.
 ## Alphabet Keys
 ```A``` ```B``` ```C``` ```D``` ```E``` ```F``` ```G``` ```H``` ```I``` ```J```
 ```K``` ```L``` ```M``` ```N``` ```O``` ```P``` ```Q``` ```R``` ```S``` ```T```
@@ -159,8 +204,7 @@ void loop()
 Just copy this code and paste it in the Arduino IDE.<br>
 # Tested Systems
 The tool is currently tested on : <br>
-1. Windows (10)<br>
-The testing is going on different systems.
+- Windows (10)<br>
 
 # Before coding...
 Start your code with ```WAIT``` so that board get time to initiate.<br>
@@ -196,12 +240,3 @@ For Arduino Pro Micro : <br>
 ![Untitled Sketch 2_bb](https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/d2b2e09b-971f-416f-ab47-31584f757970)
 
 2. If want to start again the execution, simply remove the jumper wires.
-
-<h1>Key Features</h1>
-<b>1. Simple and clean GUI.</b><br>
-<b>2. Two large windows one for mnemonics and other for arduino code.</b><br>
-<b>3. Convert Button - Convert mnemonics to arduino script.</b><br>
-<b>4. Copy Button - Copy arduino script to the clipboard so that it can paste anywhere.</b><br>
-<b>5. Reset Button - Clear all data from both windows.</b><br>
-<b>6. Save Button - Save arduino scripts on the system for future use.</b><br>
-<b>7. Exit Button - Close the application.</b><br>
