@@ -16,6 +16,7 @@ A GUI tool that generates Arduino HID scripts from mnemonics.
 - TYPE and TYNL supports " ".<br>
 - Multiple statements are supported inside for loop.<br>
 - Restrict PRESS mnemonic inside for loop.<br>
+- WRITE function added.<br>
 
 # Supported Arduino Boards
 The following boards are working on a microcontroller named ```ATMEGA32U4```.<br>
@@ -73,6 +74,11 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
   <th>It add loop in the code.</th>
   <th>REDO 6 TYPE Hello World!</th>
  </tr>
+  <tr>
+  <th>WRITE</th>
+  <th>It add ASCII characters in the code.</th>
+  <th>WRITE *</th>
+ </tr>
 </table>
 
 # Details of Mnemonics
@@ -111,6 +117,11 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
 - Example - REDO 9 TYPE Hello World!, WAIT 1000, TYPE This is a test for script!<br>
 - Here, `TYPE Hello World!`, `WAIT 1000` and `TYPE This is a test for script!` are three statements and they are separated by commas.<br>
 - REDO only supports TYPE, TYNL and WAIT Only.<br>
+## 6. WRITE
+- It add ASCII characters in the code.<br>
+- It supports some ASCII characters not all and supported ASCII characters are defined in the code.<br>
+- It press and release the key immediately.<br>
+- Example - `WRITE @`<br>
 
 # Supported Mnemonics
 ## Alphabet Keys
@@ -130,6 +141,10 @@ https://github.com/wirebits/ArduinoHID-Scripter/assets/159493381/7eb83c57-96db-4
 ```INSERT``` ```DEL``` ```BKSP``` ```ENTER```
 ## Modifier Keys
 ```CTRL``` ```SHIFT``` ```ALT```
+## ASCII Characters
+`` ` `` `!` `@` `#` `$` `%` `^` `&` `*` `(` `)` `-` `=` `[` `]` `\` `;` 
+`'` `,` `.` `/` `SPACE` `~` `_` `+` `{` `}` `|` `:` `"` `<` `>` `?` `0`
+`1` `2` `3` `4` `5` `6` `7` `8` `9`
 
 # Examples
 ## Example - 1 : Mnemonic for Open Notepad and Type
