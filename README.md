@@ -11,11 +11,12 @@ A GUI tool that generates Arduino HID scripts from mnemonics.
 - Exit Button - Close the application.<br>
 
 # New Features Added!
-- `for` Loop added.<br>
-- Next line function added.<br>
-- TYPE and TYNL supports " ".<br>
-- Multiple statements are supported inside for loop.<br>
-- WRITE function added.<br>
+- `for` Loop added.
+- Next line function added.
+- TYPE and TYNL supports " ".
+- TYPE and TYNL supports \.
+- Multiple statements are supported inside for loop.
+- WRITE function added.
 
 # Supported Arduino Boards
 The following boards are working on a microcontroller named ```ATMEGA32U4```.<br>
