@@ -14,7 +14,7 @@ A GUI tool that generates Arduino HID scripts from mnemonics.
 - `for` Loop added.
 - Next line function added.
 - TYPE and TYNL supports " ".
-- TYPE and TYNL supports \.
+- TYPE and TYNL supports `\`.
 - Multiple statements are supported inside for loop.
 - WRITE function added.
 
